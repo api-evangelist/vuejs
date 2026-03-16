@@ -1,4 +1,4 @@
-name: Vue.js API
+name: Vue.js
 description: The Progressive JavaScript Framework for building user interfaces
 image: https://vuejs.org/images/logo.png
 tags:
@@ -8,7 +8,7 @@ tags:
 - UI
 - Component-based
 created: '2024'
-modified: '2024'
+modified: '2026-03-16'
 url: https://vuejs.org
 specificationVersion: '0.18'
 apis:
@@ -99,10 +99,6 @@ apis:
     url: https://github.com/vitejs/vite
   - type: NPM
     url: https://www.npmjs.com/package/vite
-maintainers:
-- name: Evan You
-  twitter: youyuxi
-  github: yyx990803
 include:
 - name: OpenAPI
   url: https://vuejs.org/api/openapi.json
@@ -121,3 +117,6 @@ common:
   url: https://vuejs.org/support/
 - type: Sponsors
   url: https://vuejs.org/sponsor/
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
