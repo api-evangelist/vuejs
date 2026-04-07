@@ -3,11 +3,11 @@ description: >-
   The Progressive JavaScript Framework for building user interfaces.
 image: https://vuejs.org/images/logo.png
 tags:
-  - JavaScript
-  - Frontend
+  - Component-Based
   - Framework
+  - Frontend
+  - JavaScript
   - UI
-  - Component-based
 created: '2024'
 modified: '2026-03-16'
 url: https://vuejs.org
@@ -20,10 +20,10 @@ apis:
     humanUrl: https://vuejs.org/
     baseUrl: https://cdn.jsdelivr.net/npm/vue@3
     tags:
-      - JavaScript
-      - Framework
-      - Reactive
       - Components
+      - Framework
+      - JavaScript
+      - Reactive
     properties:
       - type: Documentation
         url: https://vuejs.org/guide/introduction.html
@@ -56,9 +56,9 @@ apis:
     humanUrl: https://router.vuejs.org/
     baseUrl: https://cdn.jsdelivr.net/npm/vue-router@4
     tags:
+      - Navigation
       - Router
       - SPA
-      - Navigation
     properties:
       - type: Documentation
         url: https://router.vuejs.org/guide/
@@ -74,9 +74,9 @@ apis:
     humanUrl: https://pinia.vuejs.org/
     baseUrl: https://cdn.jsdelivr.net/npm/pinia@2
     tags:
+      - Data
       - State Management
       - Store
-      - Data
     properties:
       - type: Documentation
         url: https://pinia.vuejs.org/introduction.html
@@ -93,8 +93,8 @@ apis:
     baseUrl: https://vitejs.dev
     tags:
       - Build Tool
-      - Development
       - Bundler
+      - Development
     properties:
       - type: Documentation
         url: https://vitejs.dev/guide/
