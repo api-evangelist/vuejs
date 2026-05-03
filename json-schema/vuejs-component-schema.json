@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://api-evangelist.github.io/vuejs/json-schema/vuejs-component-schema.json",
+  "title": "Vue.js Component Options",
+  "description": "Schema for a Vue.js Single File Component (SFC) options object as used with the Options API or defineComponent()",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Component display name used in DevTools and error messages"
+    },
+    "components": {
+      "type": "object",
+      "description": "Locally registered child components available in this component's template",
+      "additionalProperties": true
+    },
+    "directives": {
+      "type": "object",
+      "description": "Locally registered custom directives",
+      "additionalProperties": true
+    },
+    "props": {
+      "oneOf": [
+        {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Array form: list of prop names"
+        },
+        {
+          "type": "object",
+          "description": "Object form: prop names to type definitions or validators",
+          "additionalProperties": {
+            "oneOf": [
+              { "type": "string" },
+              {
+                "type": "object",
+                "properties": {
+                  "type": {},
+                  "required": { "type": "boolean" },
+                  "default": {},
+                  "validator": { "type": "string" }
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "description": "Component props declaration"
+    },
+    "emits": {
+      "oneOf": [
+        {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Array form: list of emitted event names"
+        },
+        {
+          "type": "object",
+          "description": "Object form: event names to validator functions"
+        }
+      ],
+      "description": "Declares custom events emitted by the component"
+    },
+    "data": {
+      "description": "Function returning the initial reactive data object for the component instance"
+    },
+    "computed": {
+      "type": "object",
+      "description": "Computed property declarations; each value is a getter function or get/set object",
+      "additionalProperties": true
+    },
+    "watch": {
+      "type": "object",
+      "description": "Data watchers; each key is a watched property or expression",
+      "additionalProperties": true
+    },
+    "methods": {
+      "type": "object",
+      "description": "Component methods callable from template or other options",
+      "additionalProperties": true
+    },
+    "setup": {
+      "description": "Composition API setup function called before component creation"
+    },
+    "template": {
+      "type": "string",
+      "description": "Inline component template string"
+    },
+    "render": {
+      "description": "Programmatic render function"
+    },
+    "provide": {
+      "description": "Values to inject into descendant components via provide/inject"
+    },
+    "inject": {
+      "oneOf": [
+        {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        {
+          "type": "object"
+        }
+      ],
+      "description": "Keys to inject from ancestor components"
+    },
+    "expose": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Public properties exposed when using template refs on this component"
+    },
+    "beforeCreate": { "description": "Lifecycle hook: called before component instance is fully initialized" },
+    "created": { "description": "Lifecycle hook: called after the component instance is created" },
+    "beforeMount": { "description": "Lifecycle hook: called before the component is mounted" },
+    "mounted": { "description": "Lifecycle hook: called after the component has been mounted to the DOM" },
+    "beforeUpdate": { "description": "Lifecycle hook: called before the component re-renders due to reactive state change" },
+    "updated": { "description": "Lifecycle hook: called after the component has re-rendered" },
+    "beforeUnmount": { "description": "Lifecycle hook: called before the component is unmounted" },
+    "unmounted": { "description": "Lifecycle hook: called after the component has been unmounted" }
+  }
+}

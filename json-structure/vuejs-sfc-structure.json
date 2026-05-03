@@ -1,0 +1,64 @@
+{
+  "title": "Vue.js Single File Component (SFC) Structure",
+  "description": "Structural documentation for a Vue.js .vue Single File Component",
+  "version": "3.0.0",
+  "root": "SingleFileComponent",
+  "entities": [
+    {
+      "name": "SingleFileComponent",
+      "description": "A Vue.js Single File Component (.vue file) with template, script, and style blocks",
+      "fields": [
+        { "name": "template", "type": "TemplateBlock", "required": false, "description": "HTML-based template for the component UI" },
+        { "name": "script", "type": "ScriptBlock", "required": false, "description": "JavaScript or TypeScript component logic" },
+        { "name": "script setup", "type": "ScriptSetupBlock", "required": false, "description": "Composition API sugar syntax script block" },
+        { "name": "style", "type": "StyleBlock", "required": false, "description": "Component-scoped or global CSS styles" },
+        { "name": "custom blocks", "type": "array[CustomBlock]", "required": false, "description": "Custom blocks for documentation, i18n, etc." }
+      ]
+    },
+    {
+      "name": "TemplateBlock",
+      "description": "The HTML template defining the component's rendered output",
+      "fields": [
+        { "name": "content", "type": "string", "required": true, "description": "HTML template with Vue.js template syntax" },
+        { "name": "lang", "type": "string", "required": false, "description": "Template language (html, pug)" }
+      ]
+    },
+    {
+      "name": "ScriptBlock",
+      "description": "The Options API or Composition API script for the component",
+      "fields": [
+        { "name": "lang", "type": "string", "required": false, "description": "Script language (js, ts)" },
+        { "name": "name", "type": "string", "required": false, "description": "Component name" },
+        { "name": "props", "type": "object|array", "required": false, "description": "Component props declaration" },
+        { "name": "emits", "type": "object|array", "required": false, "description": "Custom events declaration" },
+        { "name": "setup", "type": "function", "required": false, "description": "Composition API setup function" },
+        { "name": "data", "type": "function", "required": false, "description": "Reactive data factory" },
+        { "name": "computed", "type": "object", "required": false, "description": "Computed properties" },
+        { "name": "methods", "type": "object", "required": false, "description": "Component methods" },
+        { "name": "watch", "type": "object", "required": false, "description": "Data watchers" }
+      ]
+    },
+    {
+      "name": "ScriptSetupBlock",
+      "description": "Compilation-time syntactic sugar for using Composition API in SFCs",
+      "fields": [
+        { "name": "lang", "type": "string", "required": false, "description": "Script language (js, ts)" },
+        { "name": "defineProps", "type": "macro", "required": false, "description": "Compile-time macro to declare props" },
+        { "name": "defineEmits", "type": "macro", "required": false, "description": "Compile-time macro to declare emits" },
+        { "name": "defineExpose", "type": "macro", "required": false, "description": "Compile-time macro to expose properties" },
+        { "name": "defineOptions", "type": "macro", "required": false, "description": "Compile-time macro to set component options" },
+        { "name": "useSlots", "type": "function", "required": false, "description": "Access component slots" },
+        { "name": "useAttrs", "type": "function", "required": false, "description": "Access component attributes" }
+      ]
+    },
+    {
+      "name": "StyleBlock",
+      "description": "Component styles with optional scoping and preprocessor support",
+      "fields": [
+        { "name": "scoped", "type": "boolean", "required": false, "description": "Apply styles only to this component" },
+        { "name": "module", "type": "boolean|string", "required": false, "description": "Enable CSS Modules" },
+        { "name": "lang", "type": "string", "required": false, "description": "CSS preprocessor (css, scss, less, stylus)" }
+      ]
+    }
+  ]
+}

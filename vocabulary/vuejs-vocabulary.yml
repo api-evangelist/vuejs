@@ -1,0 +1,249 @@
+name: Vue.js Vocabulary
+description: >-
+  Domain vocabulary for Vue.js framework concepts, APIs, and patterns used across
+  the Vue.js ecosystem including core reactivity, component system, routing,
+  state management, and build tooling.
+version: '1.0.0'
+created: '2026-05-03'
+modified: '2026-05-03'
+tags:
+  - Component-Based
+  - Framework
+  - Frontend
+  - JavaScript
+  - Open Source
+
+concepts:
+  - term: Single File Component (SFC)
+    definition: >-
+      A Vue.js file format (.vue) that encapsulates a component's template, script,
+      and styles in a single file. SFCs enable syntax highlighting, scoped styles,
+      TypeScript support, and compile-time optimizations through build tools like Vite.
+    related:
+      - Template
+      - Script Setup
+      - Scoped Styles
+
+  - term: Composition API
+    definition: >-
+      A set of Vue.js APIs introduced in Vue 3 for authoring components using imported
+      functions (ref, reactive, computed, watch, etc.) rather than declaring component
+      options. Enables better code reuse through composables and improved TypeScript
+      inference.
+    related:
+      - Options API
+      - Composable
+      - setup()
+
+  - term: Options API
+    definition: >-
+      The original Vue.js API for authoring components by declaring an options object
+      with data, computed, methods, watch, and lifecycle hooks. Still fully supported
+      in Vue 3 and useful for learning and simple components.
+    related:
+      - Composition API
+      - Component Instance
+
+  - term: Reactivity
+    definition: >-
+      Vue.js's automatic dependency tracking system that re-renders components when
+      their reactive state changes. Built on JavaScript Proxy, Vue's reactivity system
+      tracks which reactive state was accessed during rendering and triggers re-renders
+      when that state mutates.
+    related:
+      - ref
+      - reactive
+      - Computed Property
+
+  - term: ref
+    definition: >-
+      A Vue.js reactivity primitive that wraps a value in a reactive object. Accessing
+      and mutating the value is done through the .value property in script. In templates,
+      refs are automatically unwrapped. Works with primitives and objects.
+    related:
+      - reactive
+      - Reactivity
+
+  - term: reactive
+    definition: >-
+      A Vue.js reactivity primitive that returns a reactive proxy of an object. Unlike
+      ref, reactive works only with objects (not primitives) and the reactive version
+      is directly accessible without .value. Loses reactivity if destructured.
+    related:
+      - ref
+      - Reactivity
+
+  - term: computed
+    definition: >-
+      A Vue.js function or property that derives its value from other reactive state.
+      Computed properties cache their value and only re-compute when their reactive
+      dependencies change, making them more efficient than methods for expensive
+      calculations.
+    related:
+      - ref
+      - watch
+      - Reactivity
+
+  - term: watch
+    definition: >-
+      A Vue.js imperative side-effect trigger that executes a callback when reactive
+      state changes. Unlike computed properties, watch is used for side effects like
+      API calls, DOM manipulation, or triggering mutations in response to state changes.
+    related:
+      - watchEffect
+      - computed
+
+  - term: watchEffect
+    definition: >-
+      A Vue.js function that immediately runs a callback and automatically re-runs it
+      whenever any reactive dependencies accessed inside the callback change. Unlike
+      watch, it does not require specifying the source and runs immediately.
+    related:
+      - watch
+
+  - term: Composable
+    definition: >-
+      A function that uses Vue.js Composition API to encapsulate and reuse stateful
+      logic. Composables are named with the "use" prefix (e.g., useMousePosition,
+      useFetch) and can use any Composition API features internally.
+    related:
+      - Composition API
+      - VueUse
+
+  - term: setup()
+    definition: >-
+      The entry point for Composition API logic in a Vue component. Executed before
+      component creation, setup() receives props and context as arguments and returns
+      values to be exposed to the template. In SFCs, <script setup> is the sugar syntax.
+    related:
+      - Composition API
+      - script setup
+
+  - term: script setup
+    definition: >-
+      Compile-time syntactic sugar for using the Composition API in Single File
+      Components. Variables, functions, and imports declared at the top level are
+      automatically exposed to the template. Enables cleaner code with less boilerplate.
+    related:
+      - setup()
+      - defineProps
+      - defineEmits
+
+  - term: Props
+    definition: >-
+      Custom attributes registered on a Vue component that allow the parent component
+      to pass data down to child components. Props are declared using the props option
+      or defineProps() in script setup and create one-way data binding.
+    related:
+      - Emits
+      - Component Communication
+
+  - term: Emits
+    definition: >-
+      Custom events that a Vue child component can emit to communicate with its parent.
+      Declared using the emits option or defineEmits() and triggered using emit().
+      Part of Vue's one-way data flow: props down, events up.
+    related:
+      - Props
+      - Component Communication
+
+  - term: Slot
+    definition: >-
+      A content distribution mechanism in Vue that allows parent components to inject
+      template content into a child component. Named slots enable multiple content
+      injection points; scoped slots expose child data to the parent's slot content.
+    related:
+      - Component System
+
+  - term: Directive
+    definition: >-
+      A special attribute prefixed with v- that applies reactive behaviors to a DOM
+      element. Built-in directives include v-if, v-for, v-bind, v-on, v-model, and
+      v-show. Custom directives can encapsulate direct DOM manipulation logic.
+    related:
+      - v-model
+      - Template Syntax
+
+  - term: v-model
+    definition: >-
+      Vue's two-way binding directive that creates a reactive binding between a form
+      input and component data. In Vue 3, components can implement v-model with a
+      modelValue prop and update:modelValue emit, supporting multiple v-model bindings.
+    related:
+      - Directive
+      - Props
+      - Emits
+
+  - term: Provide/Inject
+    definition: >-
+      Vue's dependency injection system that allows ancestor components to provide
+      values accessible to all their descendants, regardless of nesting depth.
+      Useful for sharing state that would require excessive prop drilling.
+    related:
+      - Props
+      - Component Communication
+
+  - term: Teleport
+    definition: >-
+      A Vue built-in component that renders its content at a different DOM location
+      than its logical position in the component tree. Useful for modals, tooltips,
+      and other UI patterns that need to escape overflow or z-index constraints.
+    related:
+      - Component System
+
+  - term: Suspense
+    definition: >-
+      An experimental Vue built-in component that handles async dependencies in a
+      component tree, showing fallback content while async components or async setup()
+      functions are loading.
+    related:
+      - Async Components
+
+  - term: Pinia Store
+    definition: >-
+      A state store in the Pinia state management library. Stores are defined with
+      defineStore() using either the Options Store syntax (like Options API) or
+      Setup Store syntax (like Composition API).
+    related:
+      - State Management
+      - Composable
+
+  - term: Vue Router Guard
+    definition: >-
+      Navigation hooks in Vue Router that can intercept and control navigation.
+      Include global guards (beforeEach, afterEach), per-route guards (beforeEnter),
+      and in-component guards (onBeforeRouteLeave, onBeforeRouteUpdate).
+    related:
+      - Vue Router
+      - Navigation
+
+patterns:
+  - term: Container/Presentational Pattern
+    definition: Separating logic-heavy container components from pure presentational components
+
+  - term: Renderless Component
+    definition: A component with no template that exposes logic through scoped slots
+
+  - term: Plugin Pattern
+    definition: Extending Vue app capabilities through app.use() with an install() method
+
+ecosystem:
+  - name: Vue Test Utils
+    url: https://test-utils.vuejs.org/
+    description: Official unit testing utilities for Vue components
+
+  - name: Vue DevTools
+    url: https://devtools.vuejs.org/
+    description: Browser extension for debugging Vue applications
+
+  - name: Vuetify
+    url: https://vuetifyjs.com/
+    description: Material Design component framework for Vue.js
+
+  - name: Quasar
+    url: https://quasar.dev/
+    description: Full-featured Vue.js framework for cross-platform applications
+
+  - name: Vuelidate
+    url: https://vuelidate-next.netlify.app/
+    description: Model-based validation library for Vue.js

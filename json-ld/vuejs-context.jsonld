@@ -1,0 +1,97 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "vue": "https://vuejs.org/vocab/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "SoftwareApplication": "schema:SoftwareApplication",
+    "SoftwareLibrary": "schema:SoftwareApplication",
+    "SoftwareSourceCode": "schema:SoftwareSourceCode",
+
+    "Vue": {
+      "@id": "vue:Vue",
+      "@type": "schema:SoftwareApplication"
+    },
+
+    "Component": {
+      "@id": "vue:Component",
+      "@type": "schema:SoftwareSourceCode"
+    },
+
+    "props": {
+      "@id": "vue:props",
+      "@type": "@id"
+    },
+
+    "emits": {
+      "@id": "vue:emits",
+      "@type": "@id"
+    },
+
+    "computed": {
+      "@id": "vue:computed",
+      "@type": "@id"
+    },
+
+    "Composable": {
+      "@id": "vue:Composable",
+      "@type": "schema:SoftwareSourceCode"
+    },
+
+    "Store": {
+      "@id": "vue:Store",
+      "@type": "schema:SoftwareApplication"
+    },
+
+    "Route": {
+      "@id": "vue:Route",
+      "@type": "schema:WebPage"
+    },
+
+    "Router": {
+      "@id": "vue:Router",
+      "@type": "schema:SoftwareApplication"
+    },
+
+    "Directive": {
+      "@id": "vue:Directive",
+      "@type": "schema:SoftwareSourceCode"
+    },
+
+    "Plugin": {
+      "@id": "vue:Plugin",
+      "@type": "schema:SoftwareApplication"
+    },
+
+    "name": {
+      "@id": "schema:name",
+      "@type": "xsd:string"
+    },
+
+    "description": {
+      "@id": "schema:description",
+      "@type": "xsd:string"
+    },
+
+    "version": {
+      "@id": "schema:softwareVersion",
+      "@type": "xsd:string"
+    },
+
+    "programmingLanguage": {
+      "@id": "schema:programmingLanguage",
+      "@type": "xsd:string"
+    },
+
+    "license": {
+      "@id": "schema:license",
+      "@type": "@id"
+    },
+
+    "codeRepository": {
+      "@id": "schema:codeRepository",
+      "@type": "@id"
+    }
+  }
+}

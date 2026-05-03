@@ -1,101 +1,42 @@
-# Vue.js API (vuejs)
-The Progressive JavaScript Framework for building user interfaces
+# Vue.js
 
-**URL:** [Visit APIs.json URL](https://vuejs.org)
+Vue.js is a progressive JavaScript framework for building user interfaces and single-page applications. Created by Evan You and maintained by an open-source community, Vue.js is designed to be incrementally adoptable and focuses on the view layer. It integrates with other libraries or existing projects and powers complex single-page applications when combined with modern tooling like Vue Router, Pinia state management, and Vite build tooling.
 
-## Tags:
+- **Website:** [https://vuejs.org](https://vuejs.org)
+- **Documentation:** [https://vuejs.org/guide/introduction.html](https://vuejs.org/guide/introduction.html)
+- **API Reference:** [https://vuejs.org/api/](https://vuejs.org/api/)
+- **GitHub Org:** [https://github.com/vuejs](https://github.com/vuejs)
+- **npm:** [https://www.npmjs.com/package/vue](https://www.npmjs.com/package/vue)
+- **Blog:** [https://blog.vuejs.org/](https://blog.vuejs.org/)
+- **Community:** [https://discord.com/invite/vue](https://discord.com/invite/vue)
 
- - JavaScript, Frontend, Framework, UI, Component-based
+## APIs and Libraries
 
-## Timestamps
+| Library | Description |
+|---------|-------------|
+| [Vue.js Core API](https://vuejs.org/api/) | Composition and Options API for reactive UI component development |
+| [Vue Router](https://router.vuejs.org/) | Official client-side routing with nested routes and navigation guards |
+| [Pinia](https://pinia.vuejs.org/) | Official state management with Composition API design and full TypeScript support |
+| [Vite](https://vitejs.dev/) | Next-generation build tooling with instant HMR and optimized production builds |
+| [VueUse](https://vueuse.org/) | 200+ composable utilities for browser APIs, sensors, and common patterns |
+| [Nuxt.js](https://nuxt.com/) | Vue meta-framework with SSR, SSG, file-based routing, and auto-imports |
 
-- **Created:** 2024 
-- **Modified:** 2024 
+## Schemas
 
-## APIs
+- [Vue.js Component Options Schema](json-schema/vuejs-component-schema.json) - JSON Schema for Vue component options object
 
-### Vue.js Core API
-Core Vue.js framework for building reactive user interfaces
+## Structures
 
-**Human URL:** [https://vuejs.org/](https://vuejs.org/)
+- [Vue.js SFC Structure](json-structure/vuejs-sfc-structure.json) - Structural documentation for Vue Single File Components
 
+## Linked Data
 
-#### Tags:
+- [Vue.js JSON-LD Context](json-ld/vuejs-context.jsonld) - JSON-LD context mapping Vue.js concepts to schema.org vocabulary
 
- - JavaScript, Framework, Reactive, Components
+## Vocabulary
 
-#### Properties
+- [Vue.js Vocabulary](vocabulary/vuejs-vocabulary.yml) - Domain vocabulary covering Vue.js framework concepts, patterns, and ecosystem
 
-- [Documentation](https://vuejs.org/guide/introduction.html)
-- [API Documentation](https://vuejs.org/api/)
-- [Tutorial](https://vuejs.org/tutorial/)
-- [Examples](https://vuejs.org/examples/)
-- [Style Guide](https://vuejs.org/style-guide/)
-- [GitHub](https://github.com/vuejs/core)
-- [CDN](https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js)
-- [NPM](https://www.npmjs.com/package/vue)
-- [Migration Guide](https://v3-migration.vuejs.org/)
+## Tags
 
-### Vue Router
-Official router for Vue.js for building single page applications
-
-**Human URL:** [https://router.vuejs.org/](https://router.vuejs.org/)
-
-
-#### Tags:
-
- - Router, SPA, Navigation
-
-#### Properties
-
-- [Documentation](https://router.vuejs.org/guide/)
-- [API Documentation](https://router.vuejs.org/api/)
-- [GitHub](https://github.com/vuejs/router)
-- [NPM](https://www.npmjs.com/package/vue-router)
-
-### Pinia
-Official state management library for Vue.js
-
-**Human URL:** [https://pinia.vuejs.org/](https://pinia.vuejs.org/)
-
-
-#### Tags:
-
- - State Management, Store, Data
-
-#### Properties
-
-- [Documentation](https://pinia.vuejs.org/introduction.html)
-- [API Documentation](https://pinia.vuejs.org/api/)
-- [GitHub](https://github.com/vuejs/pinia)
-- [NPM](https://www.npmjs.com/package/pinia)
-
-### Vite
-Next generation frontend tooling for Vue.js development
-
-**Human URL:** [https://vitejs.dev/](https://vitejs.dev/)
-
-
-#### Tags:
-
- - Build Tool, Development, Bundler
-
-#### Properties
-
-- [Documentation](https://vitejs.dev/guide/)
-- [Configuration](https://vitejs.dev/config/)
-- [GitHub](https://github.com/vitejs/vite)
-- [NPM](https://www.npmjs.com/package/vite)
-
-## Common Properties
-
-- [Blog](https://blog.vuejs.org/)
-- [Changelog](https://github.com/vuejs/core/blob/main/CHANGELOG.md)
-- [Terms of Service](https://vuejs.org/about/coc.html)
-- [Privacy Policy](https://vuejs.org/about/privacy.html)
-- [Support](https://vuejs.org/support/)
-- [Sponsors](https://vuejs.org/sponsor/)
-
-## Maintainers
-
-**FN:** Evan You
+`Component-Based` `Framework` `Frontend` `JavaScript` `Open Source` `UI`
