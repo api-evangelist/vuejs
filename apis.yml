@@ -197,6 +197,11 @@ common:
   - url: json-ld/vuejs-context.jsonld
     type: JSONLDContext
 
+  - type: Integrations
+    url: https://vuejs.org/partners/
+integrations:
+  - name: Themes
+  - name: Newsletters
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
