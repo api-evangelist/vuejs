@@ -172,9 +172,9 @@ common:
     url: https://blog.vuejs.org/
   - type: ChangeLog
     url: https://github.com/vuejs/core/blob/main/CHANGELOG.md
-  - type: Terms of Service
+  - type: TermsOfService
     url: https://vuejs.org/about/coc.html
-  - type: Privacy Policy
+  - type: PrivacyPolicy
     url: https://vuejs.org/about/privacy.html
   - type: Support
     url: https://vuejs.org/support/
