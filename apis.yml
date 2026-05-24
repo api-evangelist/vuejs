@@ -199,6 +199,8 @@ common:
 
   - type: Integrations
     url: https://vuejs.org/partners/
+  - type: LLMsTxt
+    url: https://vuejs.org/llms.txt
 integrations:
   - name: Themes
   - name: Newsletters
