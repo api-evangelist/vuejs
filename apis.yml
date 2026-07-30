@@ -8,6 +8,18 @@ description: >-
   Pinia state management, and Vite build tooling. Vue.js is one of the most popular
   frontend frameworks with over 4 million weekly npm downloads and a rich ecosystem
   of components and plugins.
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
 image: https://vuejs.org/images/logo.png
 tags:
   - Component-Based
