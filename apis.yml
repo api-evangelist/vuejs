@@ -97,7 +97,7 @@ apis:
     tags:
       - Navigation
       - Router
-      - SPA
+      - Spa
     tags_raw:
       - Navigation
       - Router
@@ -143,7 +143,7 @@ apis:
     humanUrl: https://vitejs.dev/
     baseUrl: https://vitejs.dev
     tags:
-      - Build Tool
+      - Build Tools
       - Bundler
       - Development
     tags_raw:
