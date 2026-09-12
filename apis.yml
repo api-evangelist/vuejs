@@ -206,6 +206,8 @@ apis:
         url: https://www.npmjs.com/package/nuxt
 
 common:
+  - type: Website
+    url: https://www.vuejs.org/
   - type: Blog
     url: https://blog.vuejs.org/
   - type: ChangeLog
