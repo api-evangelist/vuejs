@@ -2,8 +2,11 @@
   "repo": "vuejs",
   "feeds": [
     {
-      "source": "https://www.npmjs.com/package/nuxt",
-      "error": "HTTPError"
+      "source": "https://www.vuejs.org/",
+      "feed_url": "https://www.vuejs.org/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     },
     {
       "source": "https://blog.vuejs.org/feed.rss",
@@ -13,7 +16,7 @@
       "method": "feed"
     }
   ],
-  "fetched": "2026-09-06T19:17:18Z",
+  "fetched": "2026-09-13T13:00:00Z",
   "post_count": 15,
   "feed_nature": "vendor-blog",
   "feed_nature_basis": "blog_subdomain",
