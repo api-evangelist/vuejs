@@ -10,14 +10,22 @@ description: >-
   of components and plugins.
 deliveryModel:
   model: saas
-  open_source: false
+  license_evidence:
+    not_product:
+    - nuxt/nuxt
+    - vitejs/vite
+    - vuejs/core
+    - vuejs/pinia
+    - vuejs/router
+  open_source: unknown
   commercial: true
   callable_host: false
   label: Hosted service · you call their endpoint
-  confidence: medium
+  confidence: low
   source:
   - pricing
-  generated: '2026-08-28'
+  - repository-not-product
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: freemium
@@ -37,7 +45,7 @@ tags:
   - Framework
   - Frontend
   - JavaScript
-  - Open-Source
+  - Open Source
   - UI
 tags_raw:
   - Component-Based
@@ -46,6 +54,7 @@ tags_raw:
   - JavaScript
   - Open Source
   - UI
+  - Open-Source
 created: '2024-01-01'
 modified: '2026-05-03'
 url: https://vuejs.org
@@ -97,7 +106,7 @@ apis:
     tags:
       - Navigation
       - Router
-      - Spa
+      - SPA
     tags_raw:
       - Navigation
       - Router
