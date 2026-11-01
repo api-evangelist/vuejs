@@ -64,43 +64,135 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Vue.js is a progressive JavaScript framework for building user interfaces and single-page applications. Created by Evan You and maintained by an open-source community, Vue.js is designed to be incrementally adoptable and focuses on the view layer. It integrates with other libraries or existing projects and powers complex single-page applications when combined with modern tooling like Vue Router, Pinia state management, and Vite build tooling.
+Vue.js is a progressive JavaScript framework for building user interfaces and single-page applications. Created by Evan You and maintained by an open-source community, Vue.js is designed to be incrementally adoptable and focuses on the view layer. It integrates with other libraries or existing projects and powers complex single-page applications when combined with modern tooling like Vue Router, Pinia state management, and Vite build tooling. Vue.js is one of the most popular frontend frameworks with over 4 million weekly npm downloads and a rich ecosystem of components and plugins.
 
-- **Website:** [https://vuejs.org](https://vuejs.org)
-- **Documentation:** [https://vuejs.org/guide/introduction.html](https://vuejs.org/guide/introduction.html)
-- **API Reference:** [https://vuejs.org/api/](https://vuejs.org/api/)
-- **GitHub Org:** [https://github.com/vuejs](https://github.com/vuejs)
-- **npm:** [https://www.npmjs.com/package/vue](https://www.npmjs.com/package/vue)
-- **Blog:** [https://blog.vuejs.org/](https://blog.vuejs.org/)
-- **Community:** [https://discord.com/invite/vue](https://discord.com/invite/vue)
+**Areas:** Component-Based · Framework · Frontend · JavaScript · Open Source · UI
 
-## APIs and Libraries
+## Vue.js on APIs.io
 
-| Library | Description |
-|---------|-------------|
-| [Vue.js Core API](https://vuejs.org/api/) | Composition and Options API for reactive UI component development |
-| [Vue Router](https://router.vuejs.org/) | Official client-side routing with nested routes and navigation guards |
-| [Pinia](https://pinia.vuejs.org/) | Official state management with Composition API design and full TypeScript support |
-| [Vite](https://vitejs.dev/) | Next-generation build tooling with instant HMR and optimized production builds |
-| [VueUse](https://vueuse.org/) | 200+ composable utilities for browser APIs, sensors, and common patterns |
-| [Nuxt.js](https://nuxt.com/) | Vue meta-framework with SSR, SSG, file-based routing, and auto-imports |
+Everything profiled for Vue.js is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/vuejs/](https://apis.io/providers/vuejs/)** — or go straight to one of the APIs or properties below.
 
-## Schemas
+### APIs (6)
 
-- [Vue.js Component Options Schema](json-schema/vuejs-component-schema.json) - JSON Schema for Vue component options object
+- [Vue.js Core API](https://apis.io/apis/vuejs/vuejs-core-api/) — Core Vue.js composition and options API for building reactive user interfaces. Provides reactivity primitives (ref, reactive, computed, watch), lifecycle…
+- [Vue Router](https://apis.io/apis/vuejs/vue-router/) — Official client-side routing solution for Vue.js single-page applications. Vue Router provides declarative routing with nested routes, dynamic route…
+- [Pinia](https://apis.io/apis/vuejs/pinia/) — The official state management library for Vue.js, designed for composability and TypeScript support. Pinia provides a simpler and more intuitive API than…
+- [Vite](https://apis.io/apis/vuejs/vite/) — Next-generation frontend build tooling powering the Vue.js development experience. Vite provides near-instant server startup with native ES modules, hot…
+- [VueUse](https://apis.io/apis/vuejs/vueuse/) — Collection of essential Vue Composition Utilities for Vue.js, providing over 200 composable functions for common browser APIs, sensors, animations, state…
+- [Nuxt.js](https://apis.io/apis/vuejs/nuxtjs/) — The intuitive Vue framework for building full-stack web applications with Vue.js. Nuxt provides server-side rendering (SSR), static site generation (SSG),…
 
-## Structures
+### Published properties
 
-- [Vue.js SFC Structure](json-structure/vuejs-sfc-structure.json) - Structural documentation for Vue Single File Components
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Linked Data
+#### JSON Schema (1)
 
-- [Vue.js JSON-LD Context](json-ld/vuejs-context.jsonld) - JSON-LD context mapping Vue.js concepts to schema.org vocabulary
+The data models the API reads and writes.
 
-## Vocabulary
+- [Vue.js Component Options](https://apis.io/schemas/vuejs/vuejs-component/)
 
-- [Vue.js Vocabulary](vocabulary/vuejs-vocabulary.yml) - Domain vocabulary covering Vue.js framework concepts, patterns, and ecosystem
+#### JSON Structure (1)
 
-## Tags
+Data models expressed in JSON Structure.
 
-`Component-Based` `Framework` `Frontend` `JavaScript` `Open Source` `UI`
+- [Vuejs Sfc Structure](https://apis.io/json-structure/vuejs/vuejs-sfc-structure/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Vuejs Context](https://apis.io/jsonld/vuejs/vuejs-context/)
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [Vue.js Vocabulary](https://apis.io/vocabularies/vuejs/vuejs-vocabulary/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Vue.js — jsonschema rules](https://apis.io/rules/vuejs/vuejs-jsonschema-spectral-rules/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Vuejs Plans Pricing](https://apis.io/plans/vuejs/vuejs-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Vuejs Rate Limits](https://apis.io/rate-limits/vuejs/vuejs-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Vuejs Finops](https://apis.io/finops/vuejs/vuejs-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.vuejs.org/)
+- [Support](https://vuejs.org/support/)
+- [Changelog](https://github.com/vuejs/core/blob/main/CHANGELOG.md)
+- [Blog](https://blog.vuejs.org/)
+- [Terms of service](https://vuejs.org/about/coc.html)
+- [Privacy policy](https://vuejs.org/about/privacy.html)
+
+## API Evangelist rating
+
+**Kin Score 27.4** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 67.9 |
+| Contract quality | 17.2 |
+| Contract governance | 23.5 |
+| Operational transparency | 28.9 |
+| Developer ergonomics | 21.4 |
+| Access clarity | 28.9 |
+
+**Agent readiness 1.9** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | documented (partial credit) |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 12.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/vuejs/](https://apis.io/providers/vuejs/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Vue.js: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/vuejs/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
